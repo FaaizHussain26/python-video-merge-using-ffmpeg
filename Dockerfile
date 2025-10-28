@@ -14,6 +14,7 @@ WORKDIR /app
 # =====================================================
 # Minimal dependencies for ffmpeg and google client libs
 RUN apt-get update && apt-get install -y \
+    ffmpeg \
     libglib2.0-0 \
     libsm6 \
     libxrender1 \
@@ -42,11 +43,10 @@ ENV GOOGLE_CREDENTIALS_JSON=""
 ENV TOKEN_PICKLE_BASE64=""
 ENV PORT=8080
 
+# Expose the port
+EXPOSE 8080
+
 # =====================================================
 # 6️⃣ Command to Run Your App
 # =====================================================
-# Option A: Flask web app
 CMD ["python", "app.py"]
-
-# If you are running Flask as an API server, uncomment instead:
-# CMD ["flask", "run", "--host=0.0.0.0", "--port=8080"]

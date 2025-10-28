@@ -6,3 +6,4 @@ google-api-python-client
 ffmpeg-python
 imageio-ffmpeg==0.6.0
 future==1.0.0
+python-dotenv
