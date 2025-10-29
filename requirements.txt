@@ -1,9 +1,12 @@
+packaging
 Flask
 google-auth
 google-auth-oauthlib
 google-auth-httplib2
 google-api-python-client
+ib2
 ffmpeg-python
 imageio-ffmpeg==0.6.0
 future==1.0.0
 python-dotenv
+
